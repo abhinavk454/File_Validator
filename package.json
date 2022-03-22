@@ -1,0 +1,28 @@
+{
+  "name": "file_upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/pm2 start -f src/index.js --watch",
+    "test": "jest",
+    "stop": "node_modules/.bin/pm2 kill"
+  },
+  "jest": {
+    "testResultsProcessor": "./node_modules/jest-junit-reporter"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jest-junit-reporter": "^1.1.0",
+    "multer": "^1.4.2",
+    "pm2": "^4.4.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
